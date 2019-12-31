@@ -9,4 +9,8 @@ def getCurrFlow(ip):
     
 if __name__ == "__main__":
     targetIP = input("IP: ")
-    print(getCurrFlow(targetIP))
+    flow = float(getCurrFlow(targetIP))
+    if(15500 < flow):
+        print("Warning!!!! overflow!!!")
+    print(flow)
+    
